@@ -21,3 +21,11 @@ mean(pull(first_df,norm_samp_log))
 mean(pull(first_df,char_vec))
 mean(pull(first_df,factor_vec))
 ```
+
+Next, let's use `as.numeric` function to change variables
+
+```{r}
+ norm_samp_log2=as.numeric(pull(first_df,norm_samp_log))
+ char_vec2=as.numeric(pull(first_df,char_vec))
+ mean_factor_vec2=as.numeric(pull(first_df,factor_vec))
+```
