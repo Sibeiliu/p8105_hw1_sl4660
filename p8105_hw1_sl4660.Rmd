@@ -39,3 +39,16 @@ pull(first_df,norm_samp)*norm_samp_log3
 norm_samp_log4=as.numeric(norm_samp_log3)
 pull(first_df,norm_samp)*norm_samp_log4
 ```
+
+# Problem 2
+
+```{r}
+  second_df=tibble(
+    x=rnorm(500),
+    y=rnorm(500),
+    log_vec=x+y>1,
+    nu_vec=c(as.numeric(log_vec)),
+    fac_vec=factor(log_vec),
+  )
+
+```
