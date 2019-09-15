@@ -29,3 +29,13 @@ Next, let's use `as.numeric` function to change variables
  char_vec2=as.numeric(pull(first_df,char_vec))
  mean_factor_vec2=as.numeric(pull(first_df,factor_vec))
 ```
+
+And multiply them with random sample
+
+```{r}
+pull(first_df,norm_samp)*norm_samp_log2
+norm_samp_log3=factor(pull(first_df,norm_samp_log))
+pull(first_df,norm_samp)*norm_samp_log3
+norm_samp_log4=as.numeric(norm_samp_log3)
+pull(first_df,norm_samp)*norm_samp_log4
+```
