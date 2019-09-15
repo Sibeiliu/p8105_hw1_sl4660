@@ -5,3 +5,19 @@ date: "2019/9/14"
 output: github_document
 ---
 
+# Problem 1
+
+```{r,message = FALSE}
+library(tidyverse)
+ first_df=tibble(
+   norm_samp=rnorm(8),
+   norm_samp_log = norm_samp > 0,
+   char_vec=c("a","b","c","d","e","f","g","h"),
+   factor_vec=factor(c("1","2","3","1","2","3","1","2")),
+ )
+ 
+mean(pull(first_df,norm_samp))
+mean(pull(first_df,norm_samp_log))
+mean(pull(first_df,char_vec))
+mean(pull(first_df,factor_vec))
+```
