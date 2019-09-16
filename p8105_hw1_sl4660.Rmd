@@ -55,3 +55,5 @@ pull(first_df,norm_samp)*norm_samp_log4
 the row number of `second_df` dataset is `r nrow(second_df)` and the colum number of `second_df` is `r ncol(second_df)` 
 
 the mean, median and standered deviation of `x` are `r mean(pull(second_df,x))`, `r median(pull(second_df,x))` and `r sd(pull(second_df,x))` respectively
+
+ the proportion of cases for which `x+y>1` is `r (length(which(pull(second_df,log_vec)==TRUE)))/nrow(second_df)`
