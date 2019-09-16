@@ -50,5 +50,6 @@ pull(first_df,norm_samp)*norm_samp_log4
     nu_vec=c(as.numeric(log_vec)),
     fac_vec=factor(log_vec),
   )
-
 ```
+
+the row number of `second_df` dataset is `r nrow(second_df)` and the colum number of `second_df` is `r ncol(second_df)` 
