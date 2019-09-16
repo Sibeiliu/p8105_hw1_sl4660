@@ -57,3 +57,10 @@ the row number of `second_df` dataset is `r nrow(second_df)` and the colum numbe
 the mean, median and standered deviation of `x` are `r mean(pull(second_df,x))`, `r median(pull(second_df,x))` and `r sd(pull(second_df,x))` respectively
 
  the proportion of cases for which `x+y>1` is `r (length(which(pull(second_df,log_vec)==TRUE)))/nrow(second_df)`
+ 
+```{r}
+ggplot(second_df,aes(x=x,y=y,color=log_vec))+geom_point()
+ggsave("hw1_plot1.pdf", height = 4, width = 6)
+ggplot(second_df,aes(x=x,y=y,color=nu_vec)) + geom_point()
+ggplot(second_df,aes(x=x,y=y,color=fac_vec))+geom_point()
+```
